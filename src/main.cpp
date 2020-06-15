@@ -22,6 +22,7 @@
 #include "recurrenceperiodmodel.h"
 #include "daysofmonthincidencemodel.h"
 #include "incidencemodel.h"
+#include "timezonemodel.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -61,6 +62,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterType<ReccurencePeriodModel>("org.kde.calindori",0,1,"ReccurencePeriodModel");
     qmlRegisterType<DaysOfMonthIncidenceModel>("org.kde.calindori",0,1,"DaysOfMonthIncidenceModel");
     qmlRegisterType<IncidenceModel>("org.kde.calindori",0,1,"IncidenceModel");
+    qmlRegisterType<TimeZoneModel>("org.kde.calindori",0,1,"TimeZoneModel");
 
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
@@ -76,6 +78,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     CalindoriConfig calindoriConfig;
     engine.rootContext()->setContextProperty(QStringLiteral("_calindoriConfig"), &calindoriConfig);
+
+    TimeZoneModel timeZoneModel;
+    engine.rootContext()->setContextProperty(QStringLiteral("_timeZoneModel"), &timeZoneModel);
 
     engine.rootContext()->setContextProperty(QStringLiteral("_aboutData"), QVariant::fromValue(aboutData));
 

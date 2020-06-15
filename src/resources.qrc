@@ -1,44 +1,42 @@
-<!--
- SPDX-FileCopyrightText: 2020 Dimitris Kardarakos <dimkard@posteo.net>
- SPDX-License-Identifier: BSD-2-Clause
--->
 <RCC>
     <qresource prefix="/">
-        <file alias="MonthView.qml">contents/ui/kirigami-playground/MonthView.qml</file>
-        <file alias="DayDelegate.qml">contents/ui/kirigami-playground/DayDelegate.qml</file>
-        <file alias="Main.qml">contents/ui/Main.qml</file>
-        <file alias="TodosCardView.qml">contents/ui/TodosCardView.qml</file>
-        <file alias="TodoEditor.qml">contents/ui/TodoEditor.qml</file>
-        <file alias="CalendarMonthView.qml">contents/ui/CalendarMonthView.qml</file>
-        <file alias="CalendarHeader.qml">contents/ui/kirigami-playground/CalendarHeader.qml</file>
-        <file alias="TimePicker.qml">contents/ui/kirigami-playground/TimePicker.qml</file>
-        <file alias="ClockElement.qml">contents/ui/kirigami-playground/ClockElement.qml</file>
-        <file alias="CalendarEditor.qml">contents/ui/CalendarEditor.qml</file>
-        <file alias="CalendarAction.qml">contents/ui/CalendarAction.qml</file>
-        <file alias="ConfirmationSheet.qml">contents/ui/ConfirmationSheet.qml</file>
-        <file alias="EventsCardView.qml">contents/ui/EventsCardView.qml</file>
-        <file alias="EventEditor.qml">contents/ui/EventEditor.qml</file>
-        <file alias="TimePickerSheet.qml">contents/ui/TimePickerSheet.qml</file>
-        <file alias="DatePickerSheet.qml">contents/ui/DatePickerSheet.qml</file>
-        <file alias="FileChooserMobile.qml">contents/ui/FileChooserMobile.qml</file>
-        <file alias="FileChooserDesktop.qml">contents/ui/FileChooserDesktop.qml</file>
-        <file alias="FileChooser.qml">contents/ui/FileChooser.qml</file>
-        <file alias="ReminderEditor.qml">contents/ui/ReminderEditor.qml</file>
-        <file alias="PickerMonthView.qml">contents/ui/PickerMonthView.qml</file>
-        <file alias="RecurrencePickerSheet.qml">contents/ui/RecurrencePickerSheet.qml</file>
-        <file alias="DateSelectorButton.qml">contents/ui/DateSelectorButton.qml</file>
-        <file alias="TimeSelectorButton.qml">contents/ui/TimeSelectorButton.qml</file>
-        <file alias="IncidenceListView.qml">contents/ui/IncidenceListView.qml</file>
-        <file alias="IncidencePage.qml">contents/ui/IncidencePage.qml</file>
-        <file alias="EventCard.qml">contents/ui/EventCard.qml</file>
-        <file alias="TodoCard.qml">contents/ui/TodoCard.qml</file>
-        <file alias="DayView.qml">contents/ui/DayView.qml</file>
-        <file alias="WeekView.qml">contents/ui/WeekView.qml</file>
-        <file alias="CalendarMonthPage.qml">contents/ui/CalendarMonthPage.qml</file>
-        <file alias="DayPage.qml">contents/ui/DayPage.qml</file>
-        <file alias="WeekPage.qml">contents/ui/WeekPage.qml</file>
-        <file alias="CalindoriGlobalDrawer.qml">contents/ui/CalindoriGlobalDrawer.qml</file>
-        <file alias="SettingsPage.qml">contents/ui/SettingsPage.qml</file>
-        <file alias="IncidenceItemDelegate.qml">contents/ui/IncidenceItemDelegate.qml</file>
+	<file alias="MonthView.qml">contents/ui/kirigami-playground/MonthView.qml</file>
+	<file alias="DayDelegate.qml">contents/ui/kirigami-playground/DayDelegate.qml</file>
+	<file alias="Main.qml">contents/ui/Main.qml</file>
+	<file alias="TodosCardView.qml">contents/ui/TodosCardView.qml</file>
+	<file alias="TodoEditor.qml">contents/ui/TodoEditor.qml</file>
+	<file alias="CalendarMonthView.qml">contents/ui/CalendarMonthView.qml</file>
+	<file alias="CalendarHeader.qml">contents/ui/kirigami-playground/CalendarHeader.qml</file>
+	<file alias="TimePicker.qml">contents/ui/kirigami-playground/TimePicker.qml</file>
+	<file alias="ClockElement.qml">contents/ui/kirigami-playground/ClockElement.qml</file>
+	<file alias="CalendarEditor.qml">contents/ui/CalendarEditor.qml</file>
+	<file alias="CalendarAction.qml">contents/ui/CalendarAction.qml</file>
+	<file alias="ConfirmationSheet.qml">contents/ui/ConfirmationSheet.qml</file>
+	<file alias="EventsCardView.qml">contents/ui/EventsCardView.qml</file>
+	<file alias="EventEditor.qml">contents/ui/EventEditor.qml</file>
+	<file alias="TimePickerSheet.qml">contents/ui/TimePickerSheet.qml</file>
+	<file alias="DatePickerSheet.qml">contents/ui/DatePickerSheet.qml</file>
+	<file alias="FileChooserMobile.qml">contents/ui/FileChooserMobile.qml</file>
+	<file alias="FileChooserDesktop.qml">contents/ui/FileChooserDesktop.qml</file>
+	<file alias="FileChooser.qml">contents/ui/FileChooser.qml</file>
+	<file alias="ReminderEditor.qml">contents/ui/ReminderEditor.qml</file>
+	<file alias="PickerMonthView.qml">contents/ui/PickerMonthView.qml</file>
+	<file alias="RecurrencePickerSheet.qml">contents/ui/RecurrencePickerSheet.qml</file>
+	<file alias="DateSelectorButton.qml">contents/ui/DateSelectorButton.qml</file>
+	<file alias="TimeSelectorButton.qml">contents/ui/TimeSelectorButton.qml</file>
+	<file alias="IncidenceListView.qml">contents/ui/IncidenceListView.qml</file>
+	<file alias="IncidencePage.qml">contents/ui/IncidencePage.qml</file>
+	<file alias="EventCard.qml">contents/ui/EventCard.qml</file>
+	<file alias="TodoCard.qml">contents/ui/TodoCard.qml</file>
+	<file alias="DayView.qml">contents/ui/DayView.qml</file>
+	<file alias="WeekView.qml">contents/ui/WeekView.qml</file>
+	<file alias="CalendarMonthPage.qml">contents/ui/CalendarMonthPage.qml</file>
+	<file alias="DayPage.qml">contents/ui/DayPage.qml</file>
+	<file alias="WeekPage.qml">contents/ui/WeekPage.qml</file>
+	<file alias="CalindoriGlobalDrawer.qml">contents/ui/CalindoriGlobalDrawer.qml</file>
+	<file alias="SettingsPage.qml">contents/ui/SettingsPage.qml</file>
+	<file alias="IncidenceItemDelegate.qml">contents/ui/IncidenceItemDelegate.qml</file>
+	<file alias="TimeZoneSelectorButton.qml">contents/ui/TimeZoneSelectorButton.qml</file>
+	<file alias="TimeZonePickerSheet.qml">contents/ui/TimeZonePickerSheet.qml</file>
     </qresource>
 </RCC>

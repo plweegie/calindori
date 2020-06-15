@@ -28,7 +28,7 @@ void EventController::remove(LocalCalendar *calendar, const QVariantMap &eventDa
     qDebug() << "Event deleted: " << deleted;
 }
 
-void EventController::addEdit(LocalCalendar *calendar, const QVariantMap &eventData)
+void EventController::addEdit(LocalCalendar *calendar, const QVariantMap &eventData, const QTimeZone &timeZone)
 {
     qDebug() << "\naddEdit:\tCreating event";
 
@@ -66,8 +66,8 @@ void EventController::addEdit(LocalCalendar *calendar, const QVariantMap &eventD
         endDateTime = QDateTime(endDate);
     }
     else {
-        startDateTime = QDateTime(startDate, QTime(startHour, startMinute, 0, 0), QTimeZone::systemTimeZone());
-        endDateTime = QDateTime(endDate, QTime(endHour, endMinute, 0, 0), QTimeZone::systemTimeZone());
+        startDateTime = QDateTime(startDate, QTime(startHour, startMinute, 0, 0), timeZone);
+        endDateTime = QDateTime(endDate, QTime(endHour, endMinute, 0, 0), timeZone);
     }
 
     event->setDtStart(startDateTime);

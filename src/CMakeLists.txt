@@ -17,6 +17,7 @@ set(calindori_SRCS
     recurrenceperiodmodel.cpp
     daysofmonthincidencemodel.cpp
     incidencemodel.cpp
+    timezonemodel.cpp
     )
 
 qt5_add_resources(RESOURCES resources.qrc)
@@ -27,35 +28,35 @@ target_link_libraries(calindori Qt5::Core Qt5::Qml Qt5::Quick Qt5::Test Qt5::Svg
 
 if(ANDROID)
     kirigami_package_breeze_icons(ICONS
-        delete
-        dialog-cancel
-        dialog-close
-        document-edit-symbolic
-        documentinfo
-        dialog-ok
-        document-import
-        documentinfo
-        editor
-        emblem-ok-symbolic
-        go-down
-        go-next
-        go-parent-folder
-        go-previous
-        go-up
-        help-about-symbolic
-        list-add
-        resource-calendar-insert
-        tag-events
-        text-x-plain
-        view-calendar
-        view-calendar-day
-        view-calendar-tasks
-        view-calendar-upcoming-events
-        view-choose
-        find-location
-        media-playlist-repeat
-        settings-configure
-        gps
+	delete
+	dialog-cancel
+	dialog-close
+	document-edit-symbolic
+	documentinfo
+	dialog-ok
+	document-import
+	documentinfo
+	editor
+	emblem-ok-symbolic
+	go-down
+	go-next
+	go-parent-folder
+	go-previous
+	go-up
+	help-about-symbolic
+	list-add
+	resource-calendar-insert
+	tag-events
+	text-x-plain
+	view-calendar
+	view-calendar-day
+	view-calendar-tasks
+	view-calendar-upcoming-events
+	view-choose
+	find-location
+	media-playlist-repeat
+	settings-configure
+	gps
     )
 endif()
 

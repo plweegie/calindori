@@ -22,6 +22,7 @@ Kirigami.Page {
     property alias startPm: startTimeSelector.selectorPm
     property alias allDay: allDaySelector.checked
     property alias location: location.text
+    property alias timeZone: timeZoneSelector.selectorTimeZone
     property var calendar
     property var incidenceData
     property alias endDt: endDateSelector.selectorDate
@@ -93,6 +94,17 @@ Kirigami.Page {
                 Kirigami.FormData.label: i18n("Summary:")
                 text: incidenceData ? incidenceData.summary : ""
 
+            }
+
+            RowLayout {
+                Kirigami.FormData.label: i18n("Time zone")
+                spacing: 0
+
+                TimeZoneSelectorButton {
+                    id: timeZoneSelector
+
+                    selectorTitle: i18n("Time zone")
+                }
             }
 
             RowLayout {

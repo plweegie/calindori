@@ -5,6 +5,7 @@
  */
 
 #include <QObject>
+#include <QTimeZone>
 
 #ifndef EVENTCONTROLLER_H
 #define EVENTCONTROLLER_H
@@ -23,6 +24,6 @@ public:
     ~EventController() override;
 
     Q_INVOKABLE void remove(LocalCalendar *calendar, const QVariantMap &event);
-    Q_INVOKABLE void addEdit(LocalCalendar *calendar, const QVariantMap &event);
+    Q_INVOKABLE void addEdit(LocalCalendar *calendar, const QVariantMap &event, const QTimeZone &timeZone = QTimeZone::systemTimeZone());
 };
 #endif
