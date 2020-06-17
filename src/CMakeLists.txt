@@ -18,6 +18,7 @@ set(calindori_SRCS
     daysofmonthincidencemodel.cpp
     incidencemodel.cpp
     timezonemodel.cpp
+    timezoneproxymodel.cpp
     )
 
 qt5_add_resources(RESOURCES resources.qrc)

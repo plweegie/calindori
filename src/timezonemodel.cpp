@@ -2,7 +2,7 @@
 
 #include <QTimeZone>
 
-TimeZoneModel::TimeZoneModel(QObject *parent) :
+TimeZoneModel::TimeZoneModel(QObject* parent) :
     QAbstractListModel(parent),
     m_timezones {QTimeZone::availableTimeZoneIds()}
 {
@@ -27,7 +27,8 @@ QVariant TimeZoneModel::data(const QModelIndex& index, int role) const
     if (index.isValid() && role == Roles::NameRole)
     {
         const QTimeZone& timeZone = QTimeZone(m_timezones[index.row()]);
-        return timeZone.displayName(QDateTime::currentDateTime());
+        return QLocale::countryToString(timeZone.country()) + ", " +
+                timeZone.displayName(QDateTime::currentDateTime(), QTimeZone::LongName);
     }
 
     return QVariant();

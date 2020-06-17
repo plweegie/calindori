@@ -23,6 +23,7 @@
 #include "daysofmonthincidencemodel.h"
 #include "incidencemodel.h"
 #include "timezonemodel.h"
+#include "timezoneproxymodel.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -79,8 +80,10 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     CalindoriConfig calindoriConfig;
     engine.rootContext()->setContextProperty(QStringLiteral("_calindoriConfig"), &calindoriConfig);
 
-    TimeZoneModel timeZoneModel;
-    engine.rootContext()->setContextProperty(QStringLiteral("_timeZoneModel"), &timeZoneModel);
+    TimeZoneModel* timeZoneModel = new TimeZoneModel();
+    TimeZoneProxyModel timeZoneProxyModel;
+    timeZoneProxyModel.setSourceModel(timeZoneModel);
+    engine.rootContext()->setContextProperty(QStringLiteral("_timeZoneModel"), &timeZoneProxyModel);
 
     engine.rootContext()->setContextProperty(QStringLiteral("_aboutData"), QVariant::fromValue(aboutData));
 

@@ -1,9 +1,9 @@
 #ifndef TIMEZONEMODEL_H
 #define TIMEZONEMODEL_H
 
-#include <QAbstractListModel>
-#include <QList>
 #include <QByteArray>
+#include <QList>
+#include <QAbstractListModel>
 
 class TimeZoneModel : public QAbstractListModel
 {
